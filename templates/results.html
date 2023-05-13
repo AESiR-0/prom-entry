@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='results.css')}}">
+</head>
+
+<>
+    <div class="content">
+        <div class="table-wrapper">
+          <table class="fl-table">
+        <thead>
+
+        </thead>
+        <tbody>
+            {% for detail in data %}
+            <tr>
+                <td>{{detail}}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</div>
+</body>
+
+</html>

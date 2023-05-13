@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+    <div class="w-screen h-screen bg-gray-400 flex items-center justify-center">
+
+        <div class="ml-80 input mb-40 relative h-11 w-full">
+            <form id="form" method="POST">
+            
+            <input
+              placeholder="Name" name="name" id="name"
+              class="peer h-full w-28 border-b border-blue-gray-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-pink-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+            />
+            <label class="after:content[' '] pointer-events-none absolute left-0 -top-2.5 flex w-28 select-none text-sm font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-2.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-pink-500 after:transition-transform after:duration-300 peer-placeholder-shown:leading-tight peer-placeholder-shown:text-blue-gray-500 peer-focus:text-sm peer-focus:leading-tight peer-focus:text-pink-500 peer-focus:after:scale-x-100 peer-focus:after:border-pink-500 peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+              Name
+            </label>
+          </div>
+          <div class="mr-96 mt-40 relative h-11 w-full" style="right:10px;">
+            <input
+            type="text" name="password" id="password" 
+              placeholder="Pwd"
+              class="peer h-full w-28 border-b border-blue-gray-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-pink-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+            />
+            <label class="after:content[' '] pointer-events-none absolute left-0 -top-2.5 flex w-28 select-none text-sm font-normal leading-tight text-blue-gray-500 transition-all after:absolute after:-bottom-2.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-pink-500 after:transition-transform after:duration-300 peer-placeholder-shown:leading-tight peer-placeholder-shown:text-blue-gray-500 peer-focus:text-sm peer-focus:leading-tight peer-focus:text-pink-500 peer-focus:after:scale-x-100 peer-focus:after:border-pink-500 peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+              Password
+            </label>
+
+
+            <button type="submit" onclick = "Upload" class="button bg-gray-600">
+                Search!
+            </button>
+          </div>
+        </form>
+    </div>
+    </h1>
+</body>
+
+</html>
